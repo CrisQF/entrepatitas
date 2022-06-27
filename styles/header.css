@@ -1,0 +1,258 @@
+@charset "utf-8";
+/*fuentes*/
+
+
+:root {
+    --morado:rgb(44, 48, 111);
+    --celeste: rgb(4, 175, 218);
+    --plomoOscuro: rgb(74, 73, 73);
+    
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url(../Fuentes/satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../Fuentes/roboto/roboto-Regular.ttf);
+}
+
+* {
+    font-family:'roboto';
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-image: url(../imagenes/redox_01.png);
+    
+}
+
+
+.header-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color:#fff;
+    /* border-bottom: 4px solid rgb(0, 19, 105); */
+    /* position: fixed; */
+    top: 0;
+    background-image: url(../imagenes/redox_01.png);
+    
+
+    
+    
+}
+
+.header-menu img {
+    width: 250px;
+    height:180px;
+    
+    
+    
+}
+
+.logo-index {
+    width: 250px;
+    height:180px;
+    align-items: center;
+    margin: 0 auto;
+    grid-area:1/1/2/2;
+}
+
+
+nav {
+    width: 100%;
+    grid-area:2/1/3/3;
+}
+/* redes-sociales */
+
+.redes {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+
+.img-redes {
+
+    display: flex;
+    justify-content: center;
+    width:100%;
+
+}
+
+.img-redes img {
+    width:20px;
+    height: 20px;
+    padding:20px 20px 20px 20px;
+    background:rgb(73, 73, 73);
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.img-redes a {
+    
+    margin:0px 25px 0px 25px;
+    
+}
+
+
+.text-header {
+    width:100%;
+}
+
+
+/* efecto hover redes */
+
+.facebook img:hover {
+    background:rgb(21, 0, 207);
+    box-shadow: 0 0 5px rgb(5, 37, 216), 0 0 20px rgb(5, 37, 216), 0 0 20px rgb(5, 37, 216);
+    
+}
+.wasap img:hover {
+    background:rgb(0, 170, 23);
+    box-shadow: 0 0 5px rgb(0, 170, 23), 0 0 20px rgb(0, 170, 23), 0 0 20px rgb(0, 170, 23);
+    
+}
+.instagram img:hover {
+    background:rgb(207, 0, 121);
+    box-shadow: 0 0 5px rgb(207, 0, 121), 0 0 20px rgb(207, 0, 121), 0 0 20px rgb(207, 0, 121);
+    
+}
+.telegram img:hover {
+    background:rgb(4, 220, 248);
+    box-shadow: 0 0 5px rgb(4, 220, 248), 0 0 20px rgb(4, 220, 248), 0 0 20px rgb(4, 220, 248);
+    
+}
+
+
+
+
+/* -------------------- */
+
+
+
+
+.redes a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+.text-menu {
+    
+    align-items: flex-end;
+    display:flex;
+    justify-content:space-around;
+    list-style-type: none;
+    align-items: center;
+    background-color:var(--morado);
+    margin:0px;
+    height:70px;
+}
+
+.text-menu li {
+    text-decoration: none;
+    text-align: center;
+    
+    
+}
+
+
+.text-menu a {
+    
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+    padding: 15px 50px 15px 50px;
+}
+
+
+.text-menu a:hover {
+    
+    color:var(--celeste);
+    cursor:pointer;
+    text-decoration: underline;
+    transition: all 0.5s
+    
+}
+
+
+.border { 
+    border:2px solid var(--celeste);
+    border-radius: 25px;
+    background-color:var(--celeste);
+
+}
+
+.border:hover {
+    background-color:transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+
+.border a:hover {
+    
+    text-decoration: none;
+    
+}
+
+
+/* ipad pro */
+
+@media screen and (max-width:1200px) {
+    .header-menu  {
+        display:block;
+        text-align:center;
+    }
+
+    .header-menu img {
+        margin: 0 auto;
+        grid-area: 1/1/2/4
+    }
+
+    .redes {
+        margin:10px;
+    }
+
+    .text-menu { 
+        display:block;
+        height:auto;
+        padding: 0px;
+    }
+    .text-menu li {
+        padding:5px;
+    }
+
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (max-width:800px) {
+
+    .redes {
+        display:block;
+        margin:10px; 
+    }
+
+    .img-redes {
+        margin-top:10px
+    }
+
+}

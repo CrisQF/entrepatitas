@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*fuentes*/
+@font-face {
+    font-family: "Satisfy";
+    src: url(../Fuentes/satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../Fuentes/roboto/roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "julius";
+    src: url(../Fuentes/julius/julius-Regular.ttf);
+}
+
+
+#promo{
+    text-align: center;
+    font-family: "satisfy";
+    color:var(--plomoOscuro);
+    font-size:50px;
+    margin-top:40px
+}
+
+
+main {
+    width: 100%;
+    height:auto;
+    margin-bottom:30px;
+}
+section {
+    display: flex;
+    justify-content:space-around;
+    height:auto
+}
+.caja{
+    
+    width: 25rem;
+    opacity: 80%;
+    
+    
+}
+.caja:hover{
+        opacity: 100% ;
+}
+
+.caja img{
+    height: 30rem;
+    width: 25rem;   
+    box-shadow: 1px 10px 25px rgba(0,0,0,0.50); 
+    margin-bottom:20px;
+}
+.caja h1{
+    font-family: julius;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.caja p{
+    font-family: julius;
+    text-align: center;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+@media screen and (max-width:1200px) {
+    section{
+        display:block;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .caja {
+        margin: 0 auto;
+    }
+
+
+    
+
+    }

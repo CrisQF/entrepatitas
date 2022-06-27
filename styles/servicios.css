@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*fuentes*/
+@font-face {
+    font-family: "Satisfy";
+    src: url(../Fuentes/satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../Fuentes/roboto/roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "julius";
+    src: url(../Fuentes/julius/JuliusSansOne-Regular.ttf);
+}
+
+
+h1{
+    text-align: center;
+    font-family: "Satisfy";
+    color: var(--plomoOscuro);
+    font-size:50px;
+    margin-top:40px
+}
+
+.conteiner{
+    width: 100%;
+    display: flex;
+    max-width: 1800px;
+
+}
+.servicios{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0,2);
+    cursor: default;
+    transition: all 400ms ease;
+   
+}
+.servicios:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
+    transform: translateY(-3%);
+}
+
+.servicios img{
+    width: 100%;
+    height: 510px;
+}
+.servicios .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+
+}
+.logo img{
+    width: 80%;
+    height: 410px;
+}
+
+

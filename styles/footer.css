@@ -1,0 +1,185 @@
+@charset "utf-8";
+/*fuentes*/
+@font-face {
+    font-family: "Satisfy";
+    src: url(../Fuentes/satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../Fuentes/roboto/roboto-Regular.ttf);
+}
+
+
+* {
+
+    margin: 0px;
+  }
+
+  
+  p {
+    font-family: roboto;
+  }
+  
+  #app {
+    width:100%;
+    height: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    background-color:var(--morado);
+   
+    align-items: center;
+  }
+  
+  #autor {
+    display: grid;
+    grid-column: 2;
+    margin-bottom: 20px;
+  }
+  
+  .content-contacto {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 400px;
+    text-align: justify;
+  }
+  
+  .content-contacto h3 {
+    text-align: center;
+    margin:10px
+  }
+
+  .content-contacto p {
+    margin:10px
+
+  }
+  .content-contacto input {
+    width: 100%;
+    margin: 0px;
+    padding:15px 0px 15px 0px;
+    border: none;
+    outline: none;
+    text-align: center
+  }
+
+  .button-reserva {
+    margin-top:30px;
+    text-align:center
+    
+  }
+
+  .button-reserva a {
+    background-color:var(--celeste);
+    text-decoration:none;
+    color:#fff;
+    padding:15px 100px 15px 100px;
+    border-radius:15px;
+  }
+
+  .border-content {
+    width: 100%;
+    
+
+  }
+
+  .content-siguenos {
+    padding-top: 30px;
+  }
+
+  
+
+  
+  /*logo en footer*/
+  
+  .content-logo-footer img {
+    margin-top: 20px;
+    width: 250px;
+    height:180px;
+  }
+  
+  
+  /* redes sociales */
+  
+  .content-date-siguenos {
+    display: flex;
+    font-size: 30px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .content-date-siguenos a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .content-date-siguenos li {
+    margin-top: 20px;
+    
+}
+  
+  /* iconos */
+  
+  .fa-map-marker-alt::before {
+    content: "\f3c5";
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  
+  .fa-phone-volume::before {
+    content: "\f2a0";
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .fa-calendar-alt::before {
+    content: "\f073";
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .fa-facebook-f {
+    content: "\f39e";
+    color: #fff;
+  }
+  
+  .fa-instagram:before {
+    content: "\f16d";
+    color: #fff;
+  }
+  
+  .fa-whatsapp:before {
+    content: "\f232";
+    color: #fff;
+  }
+  
+
+
+  
+  @media screen and (max-width:1000px) {
+    #app {
+      display: block;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #autor {
+      margin-top:20px;
+      margin-bottom:0px;
+    }
+    .content-date-contacto {
+      margin-bottom: 50px;
+      
+    }
+
+
+    .content-date-atencion {
+      margin: 30px 0px;
+    }
+  }

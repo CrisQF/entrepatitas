@@ -1,0 +1,558 @@
+@charset "utf-8";
+/*fuentes*/
+@font-face {
+    font-family: "Satisfy";
+    src: url(../Fuentes/satisfy/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../Fuentes/roboto/roboto-Regular.ttf);
+}
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+
+
+
+/* ----------- */
+
+.content-main {
+    display:grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto ;
+    justify-content: center;
+    padding: 0px;
+}
+
+.content-text {
+    width: 100%;
+    max-width: 600px;
+    grid-area: 1/1/2/3;
+    margin: 0 auto;
+    margin-top:50px;
+    
+}
+
+.content-text h1 {
+    font-family: 'Satisfy';
+    font-size: 3.5rem;
+    text-align: center;
+    color:var(--plomoOscuro);
+    
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.content-text p {
+    text-align: justify;
+    font-family: 'roboto', ;
+    line-height: 1.5;
+
+}
+
+/* slider */
+
+
+.content-slider {
+    display:grid;
+    width: 100%;
+    grid-area:1/3/2/4;
+    align-items:center;
+}
+
+.slider {
+
+    overflow: hidden;
+}
+
+
+.slider ul {
+    display:flex;
+    padding:0px;
+    width: 400%;
+    overflow: hidden;
+    animation: transition 10s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.slider img {
+    width: 100%;
+    height:423px;
+}
+
+@keyframes transition {
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+    
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100% {margin-left:-300%;}
+}
+
+
+
+  /* mision vision objetibo */
+
+.content-meta {
+    display:grid;
+    grid-area:2/1/3/4;
+    text-align:center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(3, 188, 235);
+    color: white;
+    height:250px
+    
+}
+
+.vision {
+    
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/1/3/2;
+
+}
+
+.vision p, .mision p, .objetivo p {
+    text-align:justify;
+    margin-top:15px;
+}
+
+.mision {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/2/3/3;
+}
+
+
+.objetivo {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/3/3/4;
+}
+
+
+/* content history */
+
+
+.content-history {
+
+    max-width: 550px;
+    grid-area: 3/1/4/3;
+    margin: 0 auto;
+    display:flex;
+    margin-top:30px;
+    align-items: center;
+    
+
+}
+
+.content-history h2 {
+    font-family: 'Satisfy';
+    font-size: 2.5rem;
+    text-align: center;
+    color:var(--plomoOscuro);
+    
+
+}
+
+.content-history p {
+    text-align: justify;
+    font-family: 'roboto', ;
+    line-height: 1.5;
+    
+
+}
+
+.image-history  {
+    width:100%;
+    display:grid;
+    grid-area:3/3/4/4;
+    margin-top:30px;
+}
+
+.image-history img {
+    width: 100%;
+    max-width:450px;
+    height: 100%;
+    
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50); 
+    
+}
+
+/* dates */
+
+.content-date {
+    display:grid;
+    grid-area:5/1/6/4;
+    justify-content: center;
+    text-align:center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    height:auto;
+    
+}
+
+.tell {
+    
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/1/3/2;
+    
+    
+}
+
+
+.dayAttention {
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/2/3/3;
+    
+}
+
+
+.direction {
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    grid-area:2/3/3/4;
+    
+}
+
+.tell p, .dayAttention p, .direction p {
+    text-align:center;
+    margin-top:15px;
+    margin: 0 auto;
+}
+
+.content-date img {
+
+    width:60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/*video*/
+
+.content-video {
+    
+    grid-area:4/1/5/4;
+    width: 100%;
+    height:auto;
+    display:flex;
+    margin-top:50px;
+    background-image: url(../imagenes/fondotrasero.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    
+} 
+
+
+.video  {
+    width:100%;
+    padding:50px;
+    grid-area: 1/1/2/3;
+    
+    
+    
+}
+
+.video video {
+    width: 100%;
+    min-width: 550px;
+    height:auto;
+    
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50); 
+    
+}
+
+
+/*receta*/
+
+.receta {
+    width:100%;
+    
+    grid-area: 1/1/3/4;
+    text-align: center;
+    
+    
+}
+
+.ingredientes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    line-height: 4;
+    min-width:550px;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.receta h1 {
+    color:var(--plomoOscuro);;
+    font-family:satisfy;
+    font-size:50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+
+.receta li {
+    
+    font-size:20px;
+    color: rgb(0, 0, 0);
+    height: auto;
+    
+    margin-right: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/*afiche and bar */
+
+.afiche-bar {
+    margin-top:50px;
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    grid-area:6/1/7/4;
+    align-items: center;
+    
+    
+}
+
+.afiche-bar figure {
+    position: relative;
+    overflow: hidden;
+    border-radius:8px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50); 
+    margin:10px;
+    cursor: pointer;
+    width: 500px;
+    height:300px;
+
+}
+
+
+.afiche-bar figure img {
+    width: 100%;
+    height:100%;
+    transition: all 500ms ease-out;
+    
+}
+
+.afiche-bar figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(3, 144, 209, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 500ms ease-out;
+}
+
+.afiche-bar figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.afiche-bar figure:hover > .capa h2 {
+    margin-top:80px;
+    margin-bottom:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+.afiche-bar figure .capa h2 {
+    color: #fff;
+    font-weight: 400;
+    transition: all 500ms ease-out;
+    margin-bottom: 120px;
+    margin-top:50px;
+
+}
+
+.afiche-bar figure .capa p {
+    color: #fff;
+    font-size: 18px;
+    line-height:1.5;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+}
+
+/* BARRA DE PROMOCION */
+
+.barra_promociones {
+    
+    margin-top:50px;
+    width: 100%;
+    height:70px;
+    display:flex;
+    justify-content: space-around;
+    grid-area:7/1/8/4;
+    align-items: center;
+    background-image: url(../imagenes/fondopromo.jpg);
+    padding:40px 0px 40px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.barra_promociones h1 {
+    color: #fff;
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.barra_promociones button {
+    width: 400px;
+    padding:20px;
+    color:#fff;
+    background-color:var(--celeste);
+    cursor:pointer;
+    border: none;
+    border-radius:20px;
+    font-size:20px;
+}
+
+.barra_promociones button:hover {
+    
+    color:var(--celeste);
+    cursor:pointer;
+    background-color:transparent;
+    transition: all 0.5s;
+    border: 1px solid  var(--celeste);
+    border-radius:20px
+}
+
+
+/* ipad pro */
+
+@media screen and (max-width:1200px) {
+    .content-main {
+        width: 100%;
+        display:block;
+    }
+
+    .content-text {
+        width: 100%;
+        
+    }
+
+    .content-slider {
+        margin-top:5px;
+        text-align:center;
+    }
+
+    .image-history {
+        text-align:center;
+    }
+
+    .content-video {
+        width: 100%;
+        display:block;
+        background-image: none;
+    }
+
+    .video {
+        margin: 0 auto;
+        width: 100%;
+        padding:0px;
+        height:auto
+    }
+
+    .content-date {
+        display:block;
+    }
+
+    .afiche-bar {
+        display:block;
+        
+    }
+
+    .afiche-bar figure {
+        margin: 0 auto;
+    }
+
+    .barra_promociones{
+        display:block;
+        text-align:center;
+    }
+
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (max-width:800px) {
+    .video {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .content-meta {
+        height:auto;
+    }
+
+}
+
+@media screen and (max-width:580px) {
+    .content-video{
+        display:none
+    
+    }
+
+    .afiche-bar figure{ 
+        width: 450px;
+        height:auto
+
+    }
+
+    .content-slider {
+        display:none;
+    }
+
+}
+
+
+
+
+
+
+
